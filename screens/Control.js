@@ -180,7 +180,7 @@ const Control = () => {
           {armed ? "ARMED" : "UN-ARMED"}
         </Text>
         <Text style={{ fontWeight: "400", fontSize: 36, color: "black" }}>
-          {client.isConnected() ? "Connected" : "Not Connected"}
+          {client?.isConnected() ? "Connected" : "Not Connected"}
         </Text>
       </View>
       {/* <SensorStatus sensor="Fence" status={armed ? "Safe" : "Safe"} />
